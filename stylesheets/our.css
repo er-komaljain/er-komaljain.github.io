@@ -1,0 +1,38 @@
+.main-heading {
+    font-weight: bold;
+    margin-top: 12px;
+    font-size: 34px;
+    margin-left: 14px !important;
+}
+
+.product-grid {
+    display: table;
+}
+
+.product {
+    display: table-cell;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.image-size {
+    width: 150px;
+    height: 225px;
+}
+
+.main-container {
+    align-self: center;
+    margin-left: 235px;
+    margin-top: 145px;
+}
+
+.product-details {
+    text-align: center;
+    width: 140px;
+}
+
+.flash-sale-button {
+    float:right;
+    font-weight: bold;
+    margin-right: 30px;
+}
