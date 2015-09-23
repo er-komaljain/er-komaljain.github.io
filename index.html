@@ -7,6 +7,11 @@
 </head>
 
 <body>
+<div id="flashSaleOverlay" class="flash-sale-overlay" onclick="flashOffer()">
+    <img class="flash-sale-image" src="./images/FlashSaleImage.jpg"/>
+</div>
+
+<div class="full-content">
 <nav class="navbar navbar-default" style="height: 70px;">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -25,10 +30,11 @@
         </div>
     </div>
 </nav>
-<a href="#" class="btn btn-primary btn-lg flash-sale-button" id="flashSaleButton" onclick="flashOffer()">FLASH SALE!!</a>
+
 <div class="timer" id="timer"><span id="minutes" >01</span> : <span id="seconds">00</span></div>
 <div class="main-container">
    <iframe id="productGrid" src="./html/productGrid.html" class="product-grid-iframe"></iframe>
+</div>
 </div>
 </body>
 </html>

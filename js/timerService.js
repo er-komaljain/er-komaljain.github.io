@@ -4,7 +4,7 @@ var interval;
 $( document ).ready(function() {
     console.log( "Timer started" );
     startTimer();
-    $("#flashSaleButton").hide();
+    $("#flashSaleOverlay").hide();
     $("#timer").hide();
 });
 
@@ -14,13 +14,13 @@ function startTimer() {
 }
 
 function show() {
-    $("#flashSaleButton").show();
+    $("#flashSaleOverlay").show();
 }
 
 function flashOffer() {
     console.log("in flash offer");
     $("#productGrid").attr("src", "./html/productGridForFlashSale.html");
-    $("#flashSaleButton").hide();
+    $("#flashSaleOverlay").hide();
     $("#timer").show();
     interval = setInterval(changeTime, 1000);
 }
