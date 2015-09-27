@@ -1,8 +1,10 @@
 var startTime;
 var interval;
+var inFlashSale = false;
 
 $( document ).ready(function() {
     console.log( "Timer started" );
+    $(".after-sale").hide();
     startTimer();
     $("#flashSaleOverlay").hide();
     $("#timer").hide();
@@ -19,8 +21,10 @@ function show() {
 
 function flashOffer() {
     console.log("in flash offer");
-    $("#productGrid").attr("src", "./html/productGridForFlashSale.html");
+    inFlashSale = true;
     $("#flashSaleOverlay").hide();
+    $(".after-sale").show();
+    $(".before-sale").hide();
     $("#timer").show();
     interval = setInterval(changeTime, 1000);
 }
@@ -34,6 +38,8 @@ function changeTime() {
         clearInterval(interval);
         $("#productGrid").attr("src", "./html/productGrid.html");
         $("#timer").hide();
+        $(".after-sale").hide();
+        $(".before-sale").show();
     } else {
         if(seconds === 0) {
             $("#seconds").html(59);
