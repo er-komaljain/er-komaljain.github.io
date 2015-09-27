@@ -40,6 +40,7 @@ function changeTime() {
         $("#timer").hide();
         $(".after-sale").hide();
         $(".before-sale").show();
+        inFlashSale = false;
     } else {
         if(seconds === 0) {
             $("#seconds").html(59);
@@ -61,4 +62,8 @@ function changeTime() {
         }
     }
 
+}
+
+function showDetails(bookName) {
+    console.log(" book name = "+ bookName);
 }
