@@ -31,6 +31,8 @@
 .product-details {
     text-align: center;
     width: 140px;
+    position: relative;
+    min-height: 150px;
 }
 
 .flash-sale-button {
@@ -92,4 +94,9 @@
 
 .buy-button {
     font-weight: 900;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    bottom: 0;
+    font-size: 14px;
 }
